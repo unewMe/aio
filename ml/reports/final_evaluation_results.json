@@ -1,0 +1,234 @@
+{
+  "cnn": {
+    "name": "Custom CNN",
+    "weights_file": "custom_cnn.pth",
+    "weights_size_mb": 1.62,
+    "parameters": 422177,
+    "cpu_latency": {
+      "device": "cpu",
+      "mean_latency_ms": 34.45,
+      "std_latency_ms": 1.14,
+      "median_latency_ms": 34.3,
+      "p95_latency_ms": 36.81,
+      "target_met_le_100ms": true
+    },
+    "gpu_latency": null,
+    "default_metrics": {
+      "threshold": 0.5,
+      "recall": 0.995,
+      "precision": 1.0,
+      "f1_score": 0.9974937343358395,
+      "accuracy": 0.9975,
+      "specificity": 1.0,
+      "roc_auc": 0.9999388888888889,
+      "pr_auc": 0.9999399634881184,
+      "confusion_matrix": [
+        [
+          600,
+          0
+        ],
+        [
+          3,
+          597
+        ]
+      ],
+      "tp": 597,
+      "fp": 0,
+      "tn": 600,
+      "fn": 3
+    },
+    "optimal_threshold": 0.1577,
+    "tuned_metrics": {
+      "threshold": 0.1577386934673367,
+      "recall": 1.0,
+      "precision": 0.9771986970684039,
+      "f1_score": 0.9884678747940692,
+      "accuracy": 0.9883333333333333,
+      "specificity": 0.9766666666666667,
+      "roc_auc": 0.9999388888888889,
+      "pr_auc": 0.9999399634881184,
+      "confusion_matrix": [
+        [
+          586,
+          14
+        ],
+        [
+          0,
+          600
+        ]
+      ],
+      "tp": 600,
+      "fp": 14,
+      "tn": 586,
+      "fn": 0,
+      "f2_score": 0.9953550099535502
+    },
+    "threshold_status": "Spełnione oba kryteria (Recall >= 0.98 oraz Precision >= 0.90)",
+    "error_analysis": {
+      "fn_count": 0,
+      "fp_count": 14,
+      "fn_sample_paths": [],
+      "fp_sample_paths": [
+        "casting_data/ok_front/cast_ok_0_3642.jpeg",
+        "casting_data/ok_front/cast_ok_0_2016.jpeg",
+        "casting_data/ok_front/cast_ok_0_8603.jpeg",
+        "casting_data/ok_front/cast_ok_0_5160.jpeg",
+        "casting_data/ok_front/cast_ok_0_9087.jpeg"
+      ]
+    }
+  },
+  "resnet18": {
+    "name": "ResNet18",
+    "weights_file": "resnet18.pth",
+    "weights_size_mb": 42.67,
+    "parameters": 11177025,
+    "cpu_latency": {
+      "device": "cpu",
+      "mean_latency_ms": 62.52,
+      "std_latency_ms": 6.17,
+      "median_latency_ms": 61.0,
+      "p95_latency_ms": 75.97,
+      "target_met_le_100ms": true
+    },
+    "gpu_latency": null,
+    "default_metrics": {
+      "threshold": 0.5,
+      "recall": 0.9983333333333333,
+      "precision": 1.0,
+      "f1_score": 0.9991659716430359,
+      "accuracy": 0.9991666666666666,
+      "specificity": 1.0,
+      "roc_auc": 0.9999916666666666,
+      "pr_auc": 0.9999917081260365,
+      "confusion_matrix": [
+        [
+          600,
+          0
+        ],
+        [
+          1,
+          599
+        ]
+      ],
+      "tp": 599,
+      "fp": 0,
+      "tn": 600,
+      "fn": 1
+    },
+    "optimal_threshold": 0.1971,
+    "tuned_metrics": {
+      "threshold": 0.1971356783919598,
+      "recall": 1.0,
+      "precision": 0.9950248756218906,
+      "f1_score": 0.9975062344139651,
+      "accuracy": 0.9975,
+      "specificity": 0.995,
+      "roc_auc": 0.9999916666666666,
+      "pr_auc": 0.9999917081260365,
+      "confusion_matrix": [
+        [
+          597,
+          3
+        ],
+        [
+          0,
+          600
+        ]
+      ],
+      "tp": 600,
+      "fp": 3,
+      "tn": 597,
+      "fn": 0,
+      "f2_score": 0.9990009990009991
+    },
+    "threshold_status": "Spełnione oba kryteria (Recall >= 0.98 oraz Precision >= 0.90)",
+    "error_analysis": {
+      "fn_count": 0,
+      "fp_count": 3,
+      "fn_sample_paths": [],
+      "fp_sample_paths": [
+        "casting_data/ok_front/cast_ok_0_5965.jpeg",
+        "casting_data/ok_front/cast_ok_0_472.jpeg",
+        "casting_data/ok_front/cast_ok_0_9120.jpeg"
+      ]
+    }
+  },
+  "mobilenet_v2": {
+    "name": "MobileNetV2",
+    "weights_file": "mobilenet_v2.pth",
+    "weights_size_mb": 8.62,
+    "parameters": 2225153,
+    "cpu_latency": {
+      "device": "cpu",
+      "mean_latency_ms": 59.22,
+      "std_latency_ms": 7.65,
+      "median_latency_ms": 58.67,
+      "p95_latency_ms": 66.49,
+      "target_met_le_100ms": true
+    },
+    "gpu_latency": null,
+    "default_metrics": {
+      "threshold": 0.5,
+      "recall": 0.9983333333333333,
+      "precision": 1.0,
+      "f1_score": 0.9991659716430359,
+      "accuracy": 0.9991666666666666,
+      "specificity": 1.0,
+      "roc_auc": 0.9999777777777779,
+      "pr_auc": 0.9999780701754386,
+      "confusion_matrix": [
+        [
+          600,
+          0
+        ],
+        [
+          1,
+          599
+        ]
+      ],
+      "tp": 599,
+      "fp": 0,
+      "tn": 600,
+      "fn": 1
+    },
+    "optimal_threshold": 0.0986,
+    "tuned_metrics": {
+      "threshold": 0.09864321608040201,
+      "recall": 1.0,
+      "precision": 0.9819967266775778,
+      "f1_score": 0.990916597853014,
+      "accuracy": 0.9908333333333333,
+      "specificity": 0.9816666666666667,
+      "roc_auc": 0.9999777777777779,
+      "pr_auc": 0.9999780701754386,
+      "confusion_matrix": [
+        [
+          589,
+          11
+        ],
+        [
+          0,
+          600
+        ]
+      ],
+      "tp": 600,
+      "fp": 11,
+      "tn": 589,
+      "fn": 0,
+      "f2_score": 0.9963467286615741
+    },
+    "threshold_status": "Spełnione oba kryteria (Recall >= 0.98 oraz Precision >= 0.90)",
+    "error_analysis": {
+      "fn_count": 0,
+      "fp_count": 11,
+      "fn_sample_paths": [],
+      "fp_sample_paths": [
+        "casting_data/ok_front/cast_ok_0_5965.jpeg",
+        "casting_data/ok_front/cast_ok_0_9734.jpeg",
+        "casting_data/ok_front/cast_ok_0_434.jpeg",
+        "casting_data/ok_front/cast_ok_0_1490.jpeg",
+        "casting_data/ok_front/cast_ok_0_8896.jpeg"
+      ]
+    }
+  }
+}
